@@ -1,9 +1,9 @@
-import classes from './Card.module.css'
+import React from 'react';
 
-const Card = props => {
-    //accept className props, so AddUser can use it
-    return <div className={`${classes.card} ${props.cssClass}`}>{props.children}</div>
-    // used props.children to use info in AddUser
-}
+import classes from './Card.module.css';
+
+const Card = (props) => {
+  return <div className={`${classes.card} ${props.className}`}>{props.children}</div>;
+};
 
 export default Card;
