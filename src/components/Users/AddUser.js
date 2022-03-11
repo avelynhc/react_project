@@ -73,7 +73,7 @@ const AddUser = (props) => {
             type="text"
             // onChange={usernameChangeHandler}
             // value={enteredUsername}
-            ref={nameInputRef}
+            ref={nameInputRef} // uncontrolled components as we used 'ref' --> their internal state is not controlled by the react (<-> useState: controlled components)
           ></input>
           <label htmlFor="age">Age</label>
           <input
